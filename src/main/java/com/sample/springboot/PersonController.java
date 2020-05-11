@@ -13,7 +13,6 @@ public class PersonController {
 	
 	@Autowired
 	  PersonService service;
-      //test
 	  @RequestMapping(value="/",method=RequestMethod.GET)
 	  public List<Person> index(){
 			 return service.findAll();
